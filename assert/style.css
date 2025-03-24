@@ -1,0 +1,38 @@
+img.main{
+  max-width: 99%;
+  max-height: 99%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredbutton{
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  border-color: black;
+  color: white;
+}
+
+.content{
+  text-align: center;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+}
