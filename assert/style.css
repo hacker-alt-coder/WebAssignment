@@ -1,3 +1,39 @@
+@font-face{
+  src: url(fonts/Linotype-Didot-Italic.otf);
+  font-family: linotype;
+}
+
+center{
+  font-family: linotype;
+  font-size: 90px;
+}
+.navbar{
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000; /*To Ensure it stays at top*/
+}
+
+.nav-links{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+
 img.main{
   max-width: 99%;
   max-height: 99%;
@@ -30,9 +66,49 @@ img.main{
 
 .flex-container{
   display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  white-space: wrap;
 }
 
-.flex-container > div {
-  margin: 10px;
-  padding: 20px;
+.flex-container img{
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content:space-between;
+}
+
+.item{
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.textbox{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-box{
+  position: relative;
+}
+
+.image-box img{
+  display: block;
+}
+
+.text-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  color: white;
 }
