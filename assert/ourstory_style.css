@@ -1,0 +1,79 @@
+@font-face {
+    font-family: quickwriters;
+    src: url(fonts/quickwriters.otf);
+}
+
+@font-face {
+  font-family: harmonia;
+  src: url(fonts/Harmonia-Sans-Bold.otf);
+}
+
+@font-face{
+  src: url(fonts/Linotype-Didot-Italic.otf);
+  font-family: linotype;
+}
+
+.navbar{
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000; /*To Ensure it stays at top*/
+}
+
+.nav-links{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+
+.title{
+  font-family: linotype;
+  font-size: 90px;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content:space-between;
+    background-color: #f6f3ef;
+  }
+  
+  .item{
+    padding: 0px;
+    font-size: 20px;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .item pre{
+    font-family: quickwriters;
+    font-size: 30px;
+    padding-top: 90px;
+    padding-right: 10px;
+  }
+
+h1{
+    font-family: harmonia;
+    font-size: 90px;
+}
+
+h2{
+  font-family: harmonia;
+  font-size: 50px;
+  padding-top: 80px;
+  padding-left: 70px;
+}
